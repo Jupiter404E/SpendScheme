@@ -1,2 +1,0 @@
-# SpendScheme
-Python library - SpendScheme
