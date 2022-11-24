@@ -17,18 +17,16 @@ setuptools.setup(
     version = version,
     packages = setuptools.find_packages(),
     license = "MIT",
-    description = "",
+    description = "SpendScheme is a microframework for text formatting in Python 3",
     long_description = README,
     long_description_content_type = "text/markdown",
     include_package_data = True,
     python_requires = ">=3.8,<3.11",
     zip_safe = False,
     install_requires = [
-        "aiohttp", "typing_extensions"
     ],
     extras_require = {
         "speedup": [
-            "orjson==3.7.2"
         ]
     },
     test_suite = "tests",
