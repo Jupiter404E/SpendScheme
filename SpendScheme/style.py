@@ -1,5 +1,7 @@
 """
 
+    Copyright (C) 2022 Jupiter404E.
+
 Text style list:
     bold, italic, url, link, selected
 
