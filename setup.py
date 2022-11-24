@@ -31,7 +31,7 @@ setuptools.setup(
     },
     test_suite = "tests",
     project_urls = {
-        "Documentation (GitHub)": "https://github.com/Jupiter404E/SpendScheme",
+        "Documentation (GitHub)": "https://github.com/Jupiter404E/SpendScheme/blob/main/README.md",
         "Source (GitHub)": "https://github.com/Jupiter404E/SpendScheme",
     },
     classifiers = [
