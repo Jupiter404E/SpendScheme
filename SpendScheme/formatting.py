@@ -1,9 +1,6 @@
 """
-information:
+
     Copyright (C) 2022 Jupiter404E.
-
-function:
-
 
 """
 
