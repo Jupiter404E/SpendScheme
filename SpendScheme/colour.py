@@ -1,4 +1,5 @@
 """
+    Copyright (C) 2022 Jupiter404E.
 
 Text color list:
     black, red, green, yellow, blue, violet, cyan, white
