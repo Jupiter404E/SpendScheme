@@ -1,7 +1,12 @@
 """
 
+    Copyright (C) 2022 Jupiter404E.
+
 Text color list:
     black, red, green, yellow, blue, violet, cyan, white
+
+Text style list:
+    bold, italic, url, link, selected
 
 """
 
@@ -42,6 +47,16 @@ class __ColourBG(ColorCode):
     violet = 45
     cyan = 47
     white = 37
-    
+
+class __Style(ColorCode):
+    end      = "\33[0m"
+
+    bold     = "\33[1m"
+    italic   = "\33[3m"
+    url      = "\33[4m"
+    link     = "\33[5m"
+    selected = "\33[7m"
+
 Color = __Colour()
 ColorBG = __ColourBG()
+Style = __Style
