@@ -14,15 +14,15 @@ import os
 
 os.system("")
 
-CSI = '\033['
+CSI = "\033["
 
 def code_to_chars(code):
-    return CSI + str(code) + 'm'
+    return CSI + str(code) + "m"
 
 class ColorCode(object):
     def __init__(self):
         for name in dir(self):
-            if not name.startswith('_'):
+            if not name.startswith("_"):
                 value = getattr(self, name)
                 setattr(self, name, code_to_chars(value))
 
