@@ -1,5 +1,4 @@
 """
-    Copyright (C) 2022 Jupiter404E.
 
 Text color list:
     black, red, green, yellow, blue, violet, cyan, white
@@ -10,128 +9,39 @@ import os
 
 os.system("")
 
-class Colour:
+CSI = '\033['
+
+def code_to_chars(code):
+    return CSI + str(code) + 'm'
+
+class ColorCode(object):
     def __init__(self):
-        self.End      = "\33[0m"
+        for name in dir(self):
+            if not name.startswith('_'):
+                value = getattr(self, name)
+                setattr(self, name, code_to_chars(value))
 
-        self.Black  = "\33[30m"
-        self.Red    = "\33[31m"
-        self.Green  = "\33[32m"
-        self.Yellow = "\33[33m"
-        self.Blue   = "\33[34m"
-        self.Violet = "\33[35m"
-        self.Cyan  = "\33[36m"
-        self.White  = "\33[37m"
-
-    def end(self):
-        return (
-            self.End
-        )
+class __Colour(ColorCode):
+    end = 0
+    black = 30
+    red = 31
+    green = 32
+    yellow = 33
+    blue = 34
+    violet = 35
+    cyan = 37
+    white = 37
     
-    def black(self):
-        return (
-            self.Black
-        )
+class __ColourBG(ColorCode):
+    end = 0
+    black = 40
+    red = 41
+    green = 42
+    yellow = 43
+    blue = 44
+    violet = 45
+    cyan = 47
+    white = 37
     
-    def red(self):
-        return (
-            self.Red
-        )
-    
-    def green(self):
-        return (
-            self.Green
-        )
-    
-    def green(self):
-        return (
-            self.Green
-        )
-    
-    def yellow(self):
-        return (
-            self.Yellow
-        )
-    
-    def blue(self):
-        return (
-            self.Blue
-        )
-    
-    def violet(self):
-        return (
-            self.Violet
-        )
-    
-    def cyan(self):
-        return (
-            self.Cyan
-        )
-    
-    def white(self):
-        return (
-            self.White
-        )
-    
-class ColourBG:
-    def __init__(self):
-        self.End      = "\33[0m"
-
-        self.BlackBG  = "\33[40m"
-        self.RedBG    = "\33[41m"
-        self.GreenBG  = "\33[42m"
-        self.YellowBG = "\33[43m"
-        self.BlueBG   = "\33[44m"
-        self.VioletBG = "\33[45m"
-        self.CyanBG   = "\33[47m"
-        self.WhiteBG  = "\33[37m"
-
-    def end(self):
-        return (
-            self.End
-        )
-    
-    def black(self):
-        return (
-            self.BlackBG
-        )
-    
-    def red(self):
-        return (
-            self.RedBG
-        )
-    
-    def green(self):
-        return (
-            self.GreenBG
-        )
-    
-    def green(self):
-        return (
-            self.YellowBG
-        )
-    
-    def yellow(self):
-        return (
-            self.YellowBG
-        )
-    
-    def blue(self):
-        return (
-            self.BlueBG
-        )
-    
-    def violet(self):
-        return (
-            self.VioletBG
-        )
-    
-    def cyan(self):
-        return (
-            self.CyanBG
-        )
-    
-    def white(self):
-        return (
-            self.WhiteBG
-        )
+Color = __Colour()
+ColorBG = __ColourBG()
