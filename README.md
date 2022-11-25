@@ -44,24 +44,20 @@ import SpendScheme
 
 ## Color
 
-setColor = SpendScheme.Colour()
-
 print (
-    setColor.red(),
+    SpendScheme.Color.red,
     "Red! ",
-    setColor.blue(),
+    SpendScheme.Color.blue,
     "Blue! ",
-    setColor.green(),
+    SpendScheme.Color.green,
     "Green! ",
-    setColor.end()
+    SpendScheme.Color.end
 )
 
 ## Format type
 
-setStyle = SpendScheme.Style()
-
 print (
-    setStyle.italic(),
+    SpendScheme.Style.italic,
     "Italic! "
 )
 ```
