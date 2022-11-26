@@ -96,4 +96,4 @@ class __Style(ColourCode):
 
 Color = __Colour()
 ColorBG = __ColourBG()
-Style = __Style
+Style = __Style()
