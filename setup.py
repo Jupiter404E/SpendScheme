@@ -24,6 +24,7 @@ setuptools.setup(
     python_requires = ">=3.8,<3.11",
     zip_safe = False,
     install_requires = [
+        "random"
     ],
     extras_require = {
         "speedup": [
