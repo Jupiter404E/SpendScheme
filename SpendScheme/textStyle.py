@@ -7,10 +7,11 @@ Text color list:
 
 Text style list:
     bold, italic, url, link, selected
-
+    
 """
 
 import os
+import random
 
 os.system("")
 
@@ -19,14 +20,14 @@ CSI = "\033["
 def code_to_chars(code):
     return CSI + str(code) + "m"
 
-class ColorCode(object):
+class ColourCode(object):
     def __init__(self):
         for name in dir(self):
             if not name.startswith("_"):
                 value = getattr(self, name)
                 setattr(self, name, code_to_chars(value))
 
-class __Colour(ColorCode):
+class __Colour(ColourCode):
     end    = 0
     black  = 30
     red    = 31
@@ -34,10 +35,12 @@ class __Colour(ColorCode):
     yellow = 33
     blue   = 34
     violet = 35
-    cyan   = 37
+    cyan   = 36
     white  = 37
+
+    random = random.randint(30, 37)
     
-class __ColourBG(ColorCode):
+class __ColourBG(ColourCode):
     end    = 0
     Black  = 40
     red    = 41
@@ -45,17 +48,19 @@ class __ColourBG(ColorCode):
     yellow = 43
     blue   = 44
     violet = 45
-    cyan   = 47
+    cyan   = 46
     white  = 37
 
-class __Style(ColorCode):
-    end      = "\33[0m"
+    random = random.randint(40, 47)
 
-    bold     = "\33[1m"
-    italic   = "\33[3m"
-    url      = "\33[4m"
-    link     = "\33[5m"
-    selected = "\33[7m"
+class __Style(ColourCode):
+    end      = 0
+
+    bold     = 1
+    italic   = 3
+    url      = 4
+    link     = 5
+    selected = 7
 
 Color = __Colour()
 ColorBG = __ColourBG()
