@@ -76,7 +76,7 @@ print (
 ```
 
 ---
-If a feature doesn't work, check if your console supports it.
+### If a feature doesn't work, check if your console supports it.
 ---
 
 ## Do you have any questions?
