@@ -26,10 +26,6 @@ setuptools.setup(
     install_requires = [
         "random"
     ],
-    extras_require = {
-        "speedup": [
-        ]
-    },
     test_suite = "tests",
     project_urls = {
         "Documentation (GitHub)": "https://github.com/Jupiter404E/SpendScheme/blob/main/README.md",
