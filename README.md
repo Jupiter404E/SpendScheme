@@ -75,6 +75,31 @@ print (
 )
 ```
 
+## Making tables:
+
+```python
+import SpendScheme
+
+data = [
+    [
+        "Product", "Cost"
+    ],
+    {
+        "Strawberry": "2$",
+        "Blueberry":  "2,71$",
+        "Banana":     "1,63$",
+        "Apple":      "30¢", 
+        "Limon":      "2$",
+    }
+]
+
+tableCreate = SpendScheme.Table()
+
+print (
+    tableCreate.Table(data = data)
+)
+```
+
 ---
 ### If a feature doesn't work, check if your console supports it.
 ---
