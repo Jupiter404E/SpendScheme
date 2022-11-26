@@ -12,3 +12,4 @@ __version__ = "0.1b"
 
 from .formatting import *
 from .type import *
+from .table import *
