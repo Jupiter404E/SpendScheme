@@ -96,7 +96,7 @@ data = [
 tableCreate = SpendScheme.Table()
 
 print (
-    tableCreate.Table(data = data)
+    tableCreate.createTable(data = data)
 )
 ```
 
