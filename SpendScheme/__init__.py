@@ -11,5 +11,5 @@ __copyright__ = "Copyright 2022-present Jupiter404E"
 __version__ = "0.1b"
 
 from .formatting import *
-from .style import *
+from .textStyle import *
 from .table import *
