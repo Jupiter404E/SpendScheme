@@ -42,7 +42,7 @@ class __Colour(ColourCode):
     
 class __ColourBG(ColourCode):
     end    = 0
-    Black  = 40
+    black  = 40
     red    = 41
     green  = 42
     yellow = 43
