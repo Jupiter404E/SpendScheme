@@ -4,7 +4,7 @@
 
 """
 
-class createTable():
+class Table():
 
     __slots__ = (
         "text"
@@ -20,8 +20,8 @@ class createTable():
 
         elif text is None:
             self.text = "None"
-
-    def Table(self, data, cell_sep=' | ', header_separator = True) -> str:
+            
+    def createTable(self, data, cellUpper = None, cellSep = None, header_separator = True) -> str:
         dataСount = [
             data[0]
         ]
@@ -30,12 +30,15 @@ class createTable():
         rows = len(dataСount)
         cols = len(dataСount[0])
 
+        cellU = "-" if cellUpper is None else cellUpper
+        cellS = " | " if cellSep is None else " {} ".format(cellSep)
+
         col_width = []
         for col in range(cols):
             columns = [str(dataСount[row][col]) for row in range(rows)]
             col_width.append(len(max(columns, key=len)))
 
-        separator = "-+-".join('-' * n for n in col_width)
+        separator = "{}+{}".format(cellU, cellU).join(cellU * n for n in col_width)
 
         lines = []
 
@@ -45,7 +48,7 @@ class createTable():
                 item = str(dataСount[row][col]).rjust(col_width[col])
                 result.append(item)
 
-            lines.append(cell_sep.join(result))
+            lines.append(cellS.join(result))
 
             if i == 0 and header_separator:
                 lines.append(separator)
