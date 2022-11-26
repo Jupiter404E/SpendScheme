@@ -39,6 +39,18 @@ class __Colour(ColourCode):
     white  = 37
 
     random = random.randint(30, 37)
+
+    def __list():
+        for style in range(8):
+            for fg in range(30, 38):
+                s1 = ""
+                for bg in range(40, 48):
+                    format = ";".join([str(style), str(fg), str(bg)])
+                    s1 += "\x1b[%sm %s \x1b[0m \033[0m" % (format, format)
+                print(s1)
+            print("\n")
+
+    list = __list()
     
 class __ColourBG(ColourCode):
     end    = 0
@@ -52,6 +64,18 @@ class __ColourBG(ColourCode):
     white  = 37
 
     random = random.randint(40, 47)
+
+    def __list():
+        for style in range(8):
+            for fg in range(30, 38):
+                s1 = ""
+                for bg in range(40, 48):
+                    format = ";".join([str(style), str(fg), str(bg)])
+                    s1 += "\x1b[%sm %s \x1b[0m \033[0m" % (format, format)
+                print(s1)
+            print("\n")
+
+    list = __list()
 
 class __Style(ColourCode):
     end      = 0
