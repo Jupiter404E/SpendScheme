@@ -21,7 +21,6 @@ setuptools.setup(
     long_description = README,
     long_description_content_type = "text/markdown",
     include_package_data = True,
-    python_requires = ">=3.8,<3.10",
     zip_safe = False,
     install_requires = [
         "random"
