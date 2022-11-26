@@ -4,7 +4,7 @@
 
 """
 
-class Table():
+class createTable():
 
     __slots__ = (
         "text"
