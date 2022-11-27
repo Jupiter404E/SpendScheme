@@ -9,11 +9,14 @@
 <a class="github-badge" href="https://github.com/Jupiter404E/SpendScheme/" tabindex="-1">
 <img src="https://img.shields.io/github/repo-size/Jupiter404E/SpendScheme?style=for-the-badge" alt="Repo Size"/>
 </a>
-<a class="github-badge" href="https://github.com/MelisaDev/melisa" tabindex="-1">
+<a class="github-badge" href="https://github.com/Jupiter404E/SpendScheme/" tabindex="-1">
 <img src="https://img.shields.io/github/last-commit/Jupiter404E/SpendScheme?style=for-the-badge" alt="GitHub last commit"/>
 </a>
 <a class="github-badge" href="https://github.com/Jupiter404E/SpendScheme/" tabindex="-1">
 <img src="https://img.shields.io/github/commit-activity/m/Jupiter404E/SpendScheme?style=for-the-badge" alt="GitHub commit activity"/>
+</a>
+<a class="github-badge" href="https://ko-fi.com/Jupiter404E">
+<img src="https://img.shields.io/badge/Buy%20me-a%20coffee-ff69b4?style=for-the-badge", alt="ko-fi"/>
 </a>
 
 <hr>
