@@ -6,6 +6,18 @@
 
 <hr>
 
+<a class="github-badge" href="https://github.com/Jupiter404E/SpendScheme/" tabindex="-1">
+<img src="https://img.shields.io/github/repo-size/Jupiter404E/SpendScheme?style=for-the-badge" alt="Repo Size"/>
+</a>
+<a class="github-badge" href="https://github.com/MelisaDev/melisa" tabindex="-1">
+<img src="https://img.shields.io/github/last-commit/Jupiter404E/SpendScheme?style=for-the-badge" alt="GitHub last commit"/>
+</a>
+<a class="github-badge" href="https://github.com/Jupiter404E/SpendScheme/" tabindex="-1">
+<img src="https://img.shields.io/github/commit-activity/m/Jupiter404E/SpendScheme?style=for-the-badge" alt="GitHub commit activity"/>
+</a>
+
+<hr>
+
 <h2 align="center">
 This library is currently under development.
 </h2>
