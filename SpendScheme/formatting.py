@@ -4,8 +4,6 @@
 
 """
 
-from .colour import Colour
-
 class Formatting():
 
     __slots__ = (
