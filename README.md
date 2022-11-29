@@ -118,6 +118,14 @@ print (
 )
 ```
 
+<hr>
+
+<a href="https://github.com/Jupiter404E/SpendScheme/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Jupiter404E/SpendScheme" />
+</a>
+
+<hr>
+
 ---
 ### If a feature doesn't work, check if your console supports it.
 ---
