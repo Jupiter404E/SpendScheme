@@ -4,7 +4,7 @@
 
 """
 
-class Formatting():
+class Formatting:
 
     __slots__ = (
         "text"
