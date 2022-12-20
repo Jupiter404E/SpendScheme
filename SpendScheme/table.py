@@ -21,7 +21,28 @@ class Table:
         elif text is None:
             self.text = "None"
             
-    def createTable(self, data, cellUpper = None, cellSep = None, header_separator = True) -> str:
+    def createTable(
+        self, 
+        data, 
+        cellUpper: str = None, 
+        cellSep: str = None, 
+        header_separator = None
+    ) -> str:
+        """
+        An example of creating tables:
+            >>> import SpendScheme
+            >>> data = [["Product", "Cost"],{"Strawberry": "2$","Blueberry":"2,71$","Banana":"1,63$","Apple":"30¢","Limon":"2$",}]
+            >>> tableCreate = SpendScheme.Table()
+            >>> print (tableCreate.createTable(data = data))
+    
+               Product |  Cost
+            -----------+------
+            Strawberry |    2$
+             Blueberry | 2,71$
+                Banana | 1,63$
+                 Apple |   30¢
+                 Limon |    2$
+        """
         dataСount = [
             data[0]
         ]
