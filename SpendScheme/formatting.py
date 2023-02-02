@@ -21,7 +21,9 @@ class Formatting:
         elif text is None:
             self.text = "None"
 
-    def lowerTranslit(self):    
+    def lowerTranslit(
+        self
+    ):    
         self.text = str(self.text).lower()
 
     def autoList(
