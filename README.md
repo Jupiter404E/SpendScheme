@@ -55,74 +55,17 @@ pip install git+https://github.com/Jupiter404E/SpendScheme
 
 ## List of possible events
 
-```python
-import SpendScheme
-
-formatingText = SpendScheme.Formatting(text = "** Your text **")
-```
-
 Changing the color and type of text in your console:
 
-```python
-import SpendScheme
-
-## Color
-
-print (
-    SpendScheme.Color.red,
-    "Red! ",
-    SpendScheme.Color.blue,
-    "Blue! ",
-    SpendScheme.Color.green,
-    "Green! ",
-    SpendScheme.Color.end
-)
-
-## Format type
-
-print (
-    SpendScheme.Style.italic,
-    "Italic! "
-)
-```
+<img src = "https://github.com/Jupiter404E/SpendScheme/blob/main/examples_images/changing_the_color_and_type_of_text_in_your_console.png">
 
 Or you can do something like this:
 
-```python
-import SpendScheme
+<img src = "https://github.com/Jupiter404E/SpendScheme/blob/main/examples_images/or_you_can_do_something_like_this.png">
 
-formatingText = SpendScheme.Formatting(text = "** Your text **")
-formatingText.lowerTranslit()
+## Making tables
 
-print (
-    formatingText.answer()
-)
-```
-
-## Making tables:
-
-```python
-import SpendScheme
-
-data = [
-    [
-        "Product", "Cost"
-    ],
-    {
-        "Strawberry": "2$",
-        "Blueberry":  "2,71$",
-        "Banana":     "1,63$",
-        "Apple":      "30¢", 
-        "Limon":      "2$",
-    }
-]
-
-tableCreate = SpendScheme.Table()
-
-print (
-    tableCreate.createTable(data = data)
-)
-```
+<img src = "https://github.com/Jupiter404E/SpendScheme/blob/main/examples_images/making_tables.png">
 
 ---
 
