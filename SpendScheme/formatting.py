@@ -24,6 +24,16 @@ class Formatting:
     def lowerTranslit(self):    
         self.text = str(self.text).lower()
 
+    def autoList(
+        self,
+        list
+    ):
+        index = 0
+
+        while index < len(list):
+            print("{}. ".format(index) + list[index])
+            index = index + 1
+
     def answer(
         self,
         color = None
