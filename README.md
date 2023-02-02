@@ -9,6 +9,9 @@
 <a href="https://pypi.org/project/SpendScheme/">
 <img src="https://img.shields.io/pypi/v/SpendScheme?style=for-the-badge" alt="PyPi"/>
 </a>
+<a href="https://pypi.org/project/SpendScheme/">
+<img src="https://img.shields.io/pypi/dm/SpendScheme?color=green&style=for-the-badge&label=downloads" alt="PyPi"/>
+</a>
 <a href="https://github.com/Jupiter404E/SpendScheme/" tabindex="-1">
 <img src="https://img.shields.io/github/repo-size/Jupiter404E/SpendScheme?style=for-the-badge" alt="Repo Size"/>
 </a>
