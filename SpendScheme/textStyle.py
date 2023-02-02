@@ -7,7 +7,7 @@ Text color list:
 
 Text style list:
     bold, italic, url, link, selected
-    
+
 """
 
 import os
@@ -27,7 +27,7 @@ class ColourCode(object):
                 value = getattr(self, name)
                 setattr(self, name, code_to_chars(value))
 
-class __Colour(ColourCode):
+class Colour(ColourCode):
     end    = 0
     black  = 30
     red    = 31
@@ -40,7 +40,7 @@ class __Colour(ColourCode):
 
     random = random.randint(30, 37)
     
-class __ColourBG(ColourCode):
+class ColourBG(ColourCode):
     end    = 0
     black  = 40
     red    = 41
@@ -53,7 +53,7 @@ class __ColourBG(ColourCode):
 
     random = random.randint(40, 47)
 
-class __Style(ColourCode):
+class Style(ColourCode):
     end      = 0
 
     bold     = 1
@@ -62,6 +62,5 @@ class __Style(ColourCode):
     link     = 5
     selected = 7
 
-Color = __Colour()
-ColorBG = __ColourBG()
-Style = __Style()
+Color = Colour()
+ColorBG = ColourBG()
