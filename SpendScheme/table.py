@@ -5,21 +5,6 @@
 """
 
 class Table:
-
-    __slots__ = (
-        "text"
-    )
-
-    def __init__(
-        self,
-        *,
-        text = None,
-    ):
-        if text is not None:
-            self.text = text
-
-        elif text is None:
-            self.text = "None"
             
     def createTable(
         self, 
@@ -51,7 +36,7 @@ class Table:
         rows = len(dataСount)
         cols = len(dataСount[0])
 
-        cellU = "-" if cellUpper is None else cellUpper
+        cellU =  "-"  if cellUpper is None else cellUpper
         cellS = " | " if cellSep is None else " {} ".format(cellSep)
 
         col_width = []
@@ -75,5 +60,5 @@ class Table:
                 lines.append(separator)
 
         return (
-                '\n'.join(lines)
+                "\n".join(lines)
         )
