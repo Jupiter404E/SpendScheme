@@ -7,7 +7,6 @@
 class Table:
             
     def createTable(
-        self, 
         data, 
         cellUpper: str = None, 
         cellSep: str = None, 
