@@ -16,7 +16,7 @@ setuptools.setup(
     url = "https://github.com/Jupiter404E/SpendScheme",
     version = version,
     packages = setuptools.find_packages(),
-    license = "MIT",
+    license = "MPL-2.0 license",
     description = "SpendScheme is a microframework for text formatting in Python 3",
     long_description = README,
     long_description_content_type = "text/markdown",
@@ -29,7 +29,7 @@ setuptools.setup(
         "Source (GitHub)": "https://github.com/Jupiter404E/SpendScheme",
     },
     classifiers = [
-        "License :: OSI Approved :: MIT License",
+        "License :: OSI Approved :: MPL-2.0 license",
         "Intended Audience :: Developers",
         "Natural Language :: English",
         "Operating System :: OS Independent",
