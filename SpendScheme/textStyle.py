@@ -1,6 +1,10 @@
 """
 
-    Copyright (C) 2022 Jupiter404E.
+Copyright (C) 2022-2023 Jupiter404E.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+:copyright: (c) 2022-2023 present Jupiter404E
+:license: MPL-2.0 license, see LICENSE for more details.
 
 Text color list:
     black, red, green, yellow, blue, violet, cyan, white
@@ -15,15 +19,23 @@ import random
 
 os.system("")
 
-CSI = "\033["
+CSI = '\033['
+
+__all__ = [
+    'Colour',
+    'Color',
+    'ColourBG',
+    'ColorBG',
+    'Style'
+]
 
 def code_to_chars(code):
-    return CSI + str(code) + "m"
+    return CSI + str(code) + 'm'
 
 class ColourCode(object):
     def __init__(self):
         for name in dir(self):
-            if not name.startswith("_"):
+            if not name.startswith('_'):
                 value = getattr(self, name)
                 setattr(self, name, code_to_chars(value))
 
@@ -53,7 +65,7 @@ class ColourBG(ColourCode):
 
     random = random.randint(40, 47)
 
-class Style(ColourCode):
+class Style_(ColourCode):
     end      = 0
 
     bold     = 1
@@ -64,3 +76,4 @@ class Style(ColourCode):
 
 Color = Colour()
 ColorBG = ColourBG()
+Style = Style_()
