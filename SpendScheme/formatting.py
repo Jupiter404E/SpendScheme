@@ -8,25 +8,29 @@ Copyright (C) 2022-2023 Jupiter404E.
 
 """
 
-class Formatting:
+from typing import Any
 
-    __slots__ = (
-        'text'
-    )
-
-    def __init__(self, *, text = None):
-        if text is not None:
-            self.text = text
-
-        elif text is None:
-            self.text = None
-
-    def lowerTranslit(self):    
-        self.text = str(self.text).lower()
-
-    def answer(self, color = None):
-        if color is not None:
-            return (color + self.text + "\33[0m")
+def prettyText(
+        value,
+        style = None
+    ) -> Any:
         
-        else:
-            return (self.text)
+        """
+        Usage
+        -----
+            >>> prettyText("Hello world!", (Color.green))
+
+        Parameters
+        ----------
+            :param value: Values.
+            :param style: Text style.
+        """
+        
+        value = str(value)
+
+        if style:
+            for styles in style:
+                style = styles
+                value = str(style + value + "\33[0m")
+
+        return value
