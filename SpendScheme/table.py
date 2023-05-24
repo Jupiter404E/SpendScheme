@@ -15,17 +15,19 @@ __all__ = [
 class Table:
             
     def createTable(
-        data,
+        data: list,
         cellUpper: str = None, 
         cellSep: str = None, 
-        header_separator = None
+        header_separator: int = None
     ) -> str:
-        """
-        An example of creating tables:
+        """Create a table.
+
+        Usage
+        -----
             >>> import SpendScheme
             >>> data = [['Product', 'Cost'],{'Strawberry': '2$','Blueberry':'2,71$','Banana':'1,63$','Apple':'30¢','Limon':'2$',}]
             >>> tableCreate = SpendScheme.Table()
-            >>> print (tableCreate.createTable(data = data))
+            >>> print(tableCreate.createTable(data))
     
                Product |  Cost
             -----------+------
@@ -34,6 +36,13 @@ class Table:
                 Banana | 1,63$
                  Apple |   30¢
                  Limon |    2$
+
+        Parameters
+        ----------
+            :param data: `list` Table values.
+            :param cellUpper: `str` Vertical bar symbol.
+            :param cellSep: `str` Horizotal bar symbol.
+            :param header_separator: `int`.
         """
         dataСount = [
             data[0]
